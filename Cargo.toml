@@ -1,0 +1,17 @@
+[package]
+name = "vemos"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "vemos"
+test = false
+bench = false
+
+[profile.dev]
+panic = "abort" # disable stack unwinding on panic
+
+[profile.release]
+panic = "abort" # disbale stack unwinding on panic
+
+[dependencies]
